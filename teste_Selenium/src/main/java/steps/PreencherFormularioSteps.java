@@ -2,16 +2,19 @@ package steps;
 
 import io.cucumber.java.pt.Dado;
 import pages.BasePage;
+import pages.InsurantDataPage;
 import pages.VehicleDataPage;
 
 public class PreencherFormularioSteps {
 	
 	private BasePage basePage;	
 	private VehicleDataPage vehicleDataPage;
+	private InsurantDataPage insurantDataPage;
 
 	public PreencherFormularioSteps() {
 		basePage = new BasePage(BaseTest.driver);
 		vehicleDataPage = new VehicleDataPage(BaseTest.driver);
+		insurantDataPage = new InsurantDataPage(BaseTest.driver);
 	}
 	
 	@Dado("que eu acesso o site {string}")
@@ -36,5 +39,23 @@ public class PreencherFormularioSteps {
 		vehicleDataPage.setTextFieldLicensePlateNumber("1234");
 		vehicleDataPage.setTextFieldAnnualMileage("10000");
 		vehicleDataPage.nextPage();
+	}
+	
+	@Dado("preencho o formulario Insurant Data")
+	public void preencho_o_formulario_insurant_data() throws Exception {
+		insurantDataPage.setFirstName("Matheus");
+		insurantDataPage.setLastName("Cristino");
+		insurantDataPage.setDateOfBirth("1997","May",24);
+		insurantDataPage.setGender("male");
+		insurantDataPage.setStreetAddress("Rua José Moraes");
+		insurantDataPage.setCountry("Brazil");
+		insurantDataPage.setZipCode("37472000");
+		insurantDataPage.setCity("Carmo de Minas");
+		insurantDataPage.setOccupation("Employee");
+		insurantDataPage.setHobbie("Speeding");
+		insurantDataPage.setHobbie("Bungee Jumping");
+		insurantDataPage.setWebsite("https://www.linkedin.com/in/matheus-cristino-4b0377147/");
+		insurantDataPage.setImage();
+		insurantDataPage.nextPage();
 	}
 }

@@ -45,4 +45,8 @@ public class BasePage {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
+	
+	public static void implicitWait(int valor) throws InterruptedException {
+		Thread.sleep(valor);
+	}
 }
