@@ -38,9 +38,9 @@ public class InsurantDataPage extends BasePage {
 	
 	public void setGender(String value) throws Exception {
 		if (value == "female") {
-			insurantDataMaps.genderFemale().click();
+			click(insurantDataMaps.genderFemale());
 		} else {
-			insurantDataMaps.genderMale().click();
+			click(insurantDataMaps.genderMale());
 		}
 	}
 	
