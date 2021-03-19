@@ -12,13 +12,18 @@ Tecnologias utilizadas: Java, Selenium WebDrive, Cucumber, Junit4, Maven e o pad
 
 # Requisitos para execução 
 1 - Possuir o Jdk 8 instalado na máquina
+
 2 - Possuir o Eclipse ou outra Ide para importar o projeto
+
 3 - Possuir o navegador Google Crhome instaldo na máquina (Teste executado na versão 89.0)
 
 # Como executar 
 1 - Realizar o clone do projeto
+
 2 - Importar o projeto no Eclipse 
+
 3 - Aguardar que o Maven baixe as dependências 
+
 4 - Executar a classe PreencherFormulario.feature no pacote Feature
 
 
