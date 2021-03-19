@@ -15,7 +15,7 @@ Tecnologias utilizadas: Java, Selenium WebDrive, Cucumber, Junit4, Maven e o pad
 
 2 - Possuir o Eclipse ou outra Ide para importar o projeto
 
-3 - Possuir o navegador Google Crhome instaldo na máquina (Teste executado na versão 89.0)
+3 - Possuir o navegador Google Chrome instaldo na máquina (Teste executado na versão 89.0)
 
 # Como executar 
 1 - Realizar o clone do projeto
