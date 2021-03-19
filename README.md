@@ -30,6 +30,8 @@ Tecnologias utilizadas: Java, Selenium WebDrive, Cucumber, Junit4, Maven e o pad
 
 5 - Ou executar através da classe RunTest.java no pacote runner
 
+![alt text](https://github.com/matheus6874/testeSelenium/blob/main/testeSelenium/src/main/resources/execucao2.png?raw=true)
+
 
 
 
